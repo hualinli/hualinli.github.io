@@ -29,5 +29,18 @@
   
   
   
+  <entry>
+    <title>如何关闭VSCode中的本地仓库</title>
+    <link href="/2022/11/01/%E5%A6%82%E4%BD%95%E5%85%B3%E9%97%ADVSCode%E4%B8%AD%E7%9A%84%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/"/>
+    <url>/2022/11/01/%E5%A6%82%E4%BD%95%E5%85%B3%E9%97%ADVSCode%E4%B8%AD%E7%9A%84%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</url>
+    
+    <content type="html"><![CDATA[<p>若要关闭VSCode Git插件中的本地仓库，只要删除目录下的**.git**文件即可。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
   
 </search>
