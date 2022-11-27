@@ -16,19 +16,19 @@
   <meta name="author" content="Lihualin">
   <meta name="keywords" content="">
   
-    <meta name="description" content="报错如图所示  解决办法：  创建一个名为WSLInterop.conf的文件，内容为 1:WSLInterop:M::MZ::&#x2F;init:PF  保存后放在&#x2F;usr&#x2F;lib&#x2F;binfmt.d目录下  使用PowerShell输入wsl --shutdown重启WSL即可">
+    <meta name="description" content="报错如图所示   解决办法：  创建一个名为WSLInterop.conf的文件，内容为 1:WSLInterop:M::MZ::&#x2F;init:PF  保存后放在&#x2F;usr&#x2F;lib&#x2F;binfmt.d目录下  使用PowerShell输入wsl --shutdown重启WSL即可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WSL开启systemd后运行exe文件报错Exec format error的解决办法">
 <meta property="og:url" content="https://hualinli.github.io/2022/11/01/WSL%E5%BC%80%E5%90%AFsystemd%E5%90%8E%E8%BF%90%E8%A1%8Cexe%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99Exec-format-error%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/index.html">
 <meta property="og:site_name" content="Lihualin&#39;s Blog">
-<meta property="og:description" content="报错如图所示  解决办法：  创建一个名为WSLInterop.conf的文件，内容为 1:WSLInterop:M::MZ::&#x2F;init:PF  保存后放在&#x2F;usr&#x2F;lib&#x2F;binfmt.d目录下  使用PowerShell输入wsl --shutdown重启WSL即可">
+<meta property="og:description" content="报错如图所示   解决办法：  创建一个名为WSLInterop.conf的文件，内容为 1:WSLInterop:M::MZ::&#x2F;init:PF  保存后放在&#x2F;usr&#x2F;lib&#x2F;binfmt.d目录下  使用PowerShell输入wsl --shutdown重启WSL即可">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="c:\Users\Lihualin\AppData\Roaming\Typora\typora-user-images\image-20221127121014384.png">
+<meta property="og:image" content="https://hualinli.github.io/2022/11/01/WSL%E5%BC%80%E5%90%AFsystemd%E5%90%8E%E8%BF%90%E8%A1%8Cexe%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99Exec-format-error%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/image-20221127121014384.png">
 <meta property="article:published_time" content="2022-11-01T04:07:00.000Z">
-<meta property="article:modified_time" content="2022-11-27T04:11:42.451Z">
+<meta property="article:modified_time" content="2022-11-27T04:39:41.003Z">
 <meta property="article:author" content="Lihualin">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="c:\Users\Lihualin\AppData\Roaming\Typora\typora-user-images\image-20221127121014384.png">
+<meta name="twitter:image" content="https://hualinli.github.io/2022/11/01/WSL%E5%BC%80%E5%90%AFsystemd%E5%90%8E%E8%BF%90%E8%A1%8Cexe%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99Exec-format-error%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/image-20221127121014384.png">
   
   
   
@@ -275,7 +275,8 @@
               <div class="markdown-body">
                 
                 <p>报错如图所示</p>
-<p><img src="C:\Users\Lihualin\AppData\Roaming\Typora\typora-user-images\image-20221127121014384.png" srcset="/img/loading.gif" lazyload alt="image-20221127121014384"></p>
+<img src="/2022/11/01/WSL%E5%BC%80%E5%90%AFsystemd%E5%90%8E%E8%BF%90%E8%A1%8Cexe%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99Exec-format-error%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/image-20221127121014384.png" srcset="/img/loading.gif" lazyload class="" title="image-20221127121014384">
+
 <p>解决办法：</p>
 <ol>
 <li><p>创建一个名为<code>WSLInterop.conf</code>的文件，内容为</p>
