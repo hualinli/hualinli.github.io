@@ -16,21 +16,21 @@
   <meta name="author" content="Lihualin">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="将launch.json中的&quot;console&quot;: &quot;externalTerminal&quot;, 改为&quot;console&quot;: &quot;integratedTerminal&quot;,  打开VScode的setting.json并加入以下内容： 1234567891011121314&amp;#123;    &quot;terminal.inte">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://hualinli.github.io/2022/11/09/hello-world/index.html">
+<meta property="og:title" content="VScode设置使用内置终端调试并解决中文乱码问题">
+<meta property="og:url" content="https://hualinli.github.io/2022/11/03/VScode%E8%AE%BE%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%86%85%E7%BD%AE%E7%BB%88%E7%AB%AF%E8%B0%83%E8%AF%95%E5%B9%B6%E8%A7%A3%E5%86%B3%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Lihualin&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="将launch.json中的&quot;console&quot;: &quot;externalTerminal&quot;, 改为&quot;console&quot;: &quot;integratedTerminal&quot;,  打开VScode的setting.json并加入以下内容： 1234567891011121314&amp;#123;    &quot;terminal.inte">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-09T10:06:32.471Z">
-<meta property="article:modified_time" content="2022-11-09T10:06:32.471Z">
+<meta property="article:published_time" content="2022-11-03T04:07:49.000Z">
+<meta property="article:modified_time" content="2022-11-27T04:16:35.422Z">
 <meta property="article:author" content="Lihualin">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hello World - Lihualin&#39;s Blog</title>
+  <title>VScode设置使用内置终端调试并解决中文乱码问题 - Lihualin&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -195,7 +195,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="VScode设置使用内置终端调试并解决中文乱码问题"></span>
           
         </div>
 
@@ -206,8 +206,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-09 18:06" pubdate>
-          2022年11月9日 晚上
+        <time datetime="2022-11-03 12:07" pubdate>
+          2022年11月3日 中午
         </time>
       </span>
     
@@ -218,7 +218,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 字
+          652 字
         
       </span>
     
@@ -229,7 +229,7 @@
         
         
         
-          4 分钟
+          6 分钟
         
       </span>
     
@@ -267,24 +267,20 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">VScode设置使用内置终端调试并解决中文乱码问题</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <ol>
+<li><p>将<code>launch.json</code>中的<code>&quot;console&quot;: &quot;externalTerminal&quot;,</code> 改为<code>&quot;console&quot;: &quot;integratedTerminal&quot;,</code></p>
+</li>
+<li><p>打开<code>VScode</code>的<code>setting.json</code>并加入以下内容：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs json"><br><span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-attr">&quot;terminal.integrated.profiles.windows&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>        <span class="hljs-attr">&quot;Command Prompt&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>            <span class="hljs-attr">&quot;path&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;C:\\Windows\\System32\\cmd.exe&quot;</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">&quot;args&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;-NoExit&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;/K&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;chcp 65001&quot;</span><span class="hljs-punctuation">]</span><br>        <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-attr">&quot;PowerShell&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>            <span class="hljs-attr">&quot;source&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;PowerShell&quot;</span><span class="hljs-punctuation">,</span><br>            <span class="hljs-attr">&quot;args&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;-NoExit&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;/C&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;chcp 65001&quot;</span><span class="hljs-punctuation">]</span><br>        <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;terminal.integrated.defaultProfile.windows&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Command Prompt&quot;</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>保存重启终端即可</p>
+</li>
+</ol>
 
                 
               </div>
@@ -302,8 +298,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>https://hualinli.github.io/2022/11/09/hello-world/</div>
+      <div>VScode设置使用内置终端调试并解决中文乱码问题</div>
+      <div>https://hualinli.github.io/2022/11/03/VScode设置使用内置终端调试并解决中文乱码问题/</div>
     </div>
     <div class="license-meta">
       
@@ -315,7 +311,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年11月9日</div>
+          <div>2022年11月3日</div>
         </div>
       
       
@@ -363,8 +359,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/01/%E5%A6%82%E4%BD%95%E5%85%B3%E9%97%ADVSCode%E4%B8%AD%E7%9A%84%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/" title="如何关闭VSCode中的本地仓库">
-                        <span class="hidden-mobile">如何关闭VSCode中的本地仓库</span>
+                      <a href="/2022/11/02/WSL-LLVM-Clangd%E7%9A%84C-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="WSL+LLVM+Clangd的C++环境配置">
+                        <span class="hidden-mobile">WSL+LLVM+Clangd的C++环境配置</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

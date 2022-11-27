@@ -16,21 +16,23 @@
   <meta name="author" content="Lihualin">
   <meta name="keywords" content="">
   
-    <meta name="description" content="安装Node.js和Git并安装 Download | Node.js (nodejs.org) Git (git-scm.com)  使用npm -v检查安装情况  安装hexo 1npm install -g hexo-cli  创建用于存放博客文件的文件夹并初始化 123hexo init &lt;folder&gt;cd &lt;folder&gt;npm install  配置conf">
+    <meta name="description" content="报错如图所示  解决办法：  创建一个名为WSLInterop.conf的文件，内容为 1:WSLInterop:M::MZ::&#x2F;init:PF  保存后放在&#x2F;usr&#x2F;lib&#x2F;binfmt.d目录下  使用PowerShell输入wsl --shutdown重启WSL即可">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Hexo搭建个人博客">
-<meta property="og:url" content="https://hualinli.github.io/2022/11/09/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="WSL开启systemd后运行exe文件报错Exec format error的解决办法">
+<meta property="og:url" content="https://hualinli.github.io/2022/11/01/WSL%E5%BC%80%E5%90%AFsystemd%E5%90%8E%E8%BF%90%E8%A1%8Cexe%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99Exec-format-error%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/index.html">
 <meta property="og:site_name" content="Lihualin&#39;s Blog">
-<meta property="og:description" content="安装Node.js和Git并安装 Download | Node.js (nodejs.org) Git (git-scm.com)  使用npm -v检查安装情况  安装hexo 1npm install -g hexo-cli  创建用于存放博客文件的文件夹并初始化 123hexo init &lt;folder&gt;cd &lt;folder&gt;npm install  配置conf">
+<meta property="og:description" content="报错如图所示  解决办法：  创建一个名为WSLInterop.conf的文件，内容为 1:WSLInterop:M::MZ::&#x2F;init:PF  保存后放在&#x2F;usr&#x2F;lib&#x2F;binfmt.d目录下  使用PowerShell输入wsl --shutdown重启WSL即可">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-09T13:27:55.000Z">
-<meta property="article:modified_time" content="2022-11-27T04:23:16.024Z">
+<meta property="og:image" content="c:\Users\Lihualin\AppData\Roaming\Typora\typora-user-images\image-20221127121014384.png">
+<meta property="article:published_time" content="2022-11-01T04:07:00.000Z">
+<meta property="article:modified_time" content="2022-11-27T04:11:42.451Z">
 <meta property="article:author" content="Lihualin">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="c:\Users\Lihualin\AppData\Roaming\Typora\typora-user-images\image-20221127121014384.png">
   
   
   
-  <title>使用Hexo搭建个人博客 - Lihualin&#39;s Blog</title>
+  <title>WSL开启systemd后运行exe文件报错Exec format error的解决办法 - Lihualin&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -195,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="使用Hexo搭建个人博客"></span>
+            <span id="subtitle" data-typed-text="WSL开启systemd后运行exe文件报错Exec format error的解决办法"></span>
           
         </div>
 
@@ -206,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-09 21:27" pubdate>
-          2022年11月9日 晚上
+        <time datetime="2022-11-01 12:07" pubdate>
+          2022年11月1日 中午
         </time>
       </span>
     
@@ -218,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          296 字
+          126 字
         
       </span>
     
@@ -229,7 +231,7 @@
         
         
         
-          3 分钟
+          2 分钟
         
       </span>
     
@@ -267,28 +269,22 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">使用Hexo搭建个人博客</h1>
+            <h1 style="display: none">WSL开启systemd后运行exe文件报错Exec format error的解决办法</h1>
             
             
               <div class="markdown-body">
                 
-                <ol>
-<li><p>安装Node.js和Git并安装</p>
-<p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Download | Node.js (nodejs.org)</a></p>
-<p><a target="_blank" rel="noopener" href="https://git-scm.com/">Git (git-scm.com)</a></p>
+                <p>报错如图所示</p>
+<p><img src="C:\Users\Lihualin\AppData\Roaming\Typora\typora-user-images\image-20221127121014384.png" srcset="/img/loading.gif" lazyload alt="image-20221127121014384"></p>
+<p>解决办法：</p>
+<ol>
+<li><p>创建一个名为<code>WSLInterop.conf</code>的文件，内容为</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ruby"><span class="hljs-symbol">:WSLInterop</span><span class="hljs-symbol">:M</span><span class="hljs-symbol">:</span><span class="hljs-symbol">:MZ</span><span class="hljs-symbol">:</span><span class="hljs-symbol">:/init</span><span class="hljs-symbol">:PF</span><br></code></pre></td></tr></table></figure>
 </li>
-<li><p>使用npm -v检查安装情况</p>
+<li><p>保存后放在<code>/usr/lib/binfmt.d</code>目录下</p>
 </li>
-<li><p>安装hexo</p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">npm install -g hexo-<span class="hljs-keyword">cli</span><br></code></pre></td></tr></table></figure>
+<li><p>使用<code>PowerShell</code>输入<code>wsl --shutdown</code>重启<code>WSL</code>即可</p>
 </li>
-<li><p>创建用于存放博客文件的文件夹并初始化</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs powershell">hexo init &lt;folder&gt;<br><span class="hljs-built_in">cd</span> &lt;folder&gt;<br>npm install<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>配置config</p>
-</li>
-<li><p>基础命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean//清除缓存文件和已生成的静态文件<br>hexo g//生成静态文件<br>hexo s//启动本地服务<br>hexo d//push到github<br>hexo new <span class="hljs-string">&quot;title&quot;</span>//新建一个名为title的博文<br></code></pre></td></tr></table></figure></li>
 </ol>
 
                 
@@ -307,8 +303,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>使用Hexo搭建个人博客</div>
-      <div>https://hualinli.github.io/2022/11/09/使用Hexo搭建个人博客/</div>
+      <div>WSL开启systemd后运行exe文件报错Exec format error的解决办法</div>
+      <div>https://hualinli.github.io/2022/11/01/WSL开启systemd后运行exe文件报错Exec-format-error的解决办法/</div>
     </div>
     <div class="license-meta">
       
@@ -320,7 +316,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年11月9日</div>
+          <div>2022年11月1日</div>
         </div>
       
       
@@ -358,21 +354,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/19/LeetCode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98-1732-%E6%89%BE%E5%88%B0%E6%9C%80%E9%AB%98%E6%B5%B7%E6%8B%94/" title="LeetCode每日一题 1732. 找到最高海拔">
+                      <a href="/2022/11/01/%E5%A6%82%E4%BD%95%E5%85%B3%E9%97%ADVSCode%E4%B8%AD%E7%9A%84%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/" title="如何关闭VSCode中的本地仓库">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">LeetCode每日一题 1732. 找到最高海拔</span>
+                        <span class="hidden-mobile">如何关闭VSCode中的本地仓库</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2022/11/03/VScode%E8%AE%BE%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%86%85%E7%BD%AE%E7%BB%88%E7%AB%AF%E8%B0%83%E8%AF%95%E5%B9%B6%E8%A7%A3%E5%86%B3%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/" title="VScode设置使用内置终端调试并解决中文乱码问题">
-                        <span class="hidden-mobile">VScode设置使用内置终端调试并解决中文乱码问题</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
